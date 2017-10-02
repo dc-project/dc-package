@@ -1,0 +1,5 @@
+dc-etcd (3.2.8) stretch; urgency=low
+
+    * Version: new version
+
+    -- ysicing <root@ysicing.net> Mon Oct  2 11:31:16 CST 2017

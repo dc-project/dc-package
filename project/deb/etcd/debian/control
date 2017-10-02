@@ -1,0 +1,22 @@
+Source: dc-etcd
+Priority: optional
+Maintainer: ysicing <root@ysicing.net>
+Build-Depends: debhelper (>= 8.0.0),dh-systemd (>= 1.5)
+Standards-Version: 3.9.4
+Section: utils
+Homepage: http://dl.ysicing.net
+
+Package: dc-etcd
+Section: utils
+Architecture: linux-any
+Description: Etcd server
+
+Package: dc-etcdctl
+Section: utils
+Architecture: linux-any
+Description: Etcd cli
+
+Package: dc-etcd-proxy
+Section: utils
+Architecture: linux-any
+Description: Etcd proxy

@@ -1,0 +1,18 @@
+#!/bin/bash
+set -e
+
+case "$1" in 
+    configure)
+        mkdir -p /data/envs/
+        if [ -n "$LOCAL_IP" ];then
+            echo "LOCAL_IP=$LOCAL_IP" > /data/envs/etcd.sh
+        else
+            echo "LOCAL_IP=127.0.0.1" > /data/envs/etcd.sh
+        fi
+    ;;
+    abort-*)
+        exit 1
+    ;;
+    *
+    ;;
+esac

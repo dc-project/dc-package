@@ -1,3 +1,7 @@
 .release
 *.deb
 *.rpm
+build/Dockerfile
+build/run.sh
+build/sources.list
+build/gnupg.tar.gz
