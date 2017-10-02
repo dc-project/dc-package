@@ -1,0 +1,14 @@
+[Unit]
+Description=etcd service
+After=network.target
+
+[Service]
+User=root
+EnvironmentFile=/data/envs/etcd.sh
+PermissionsStartOnly=true
+ExecStart=/usr/share/dc-etcd/scripts/start.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

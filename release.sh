@@ -48,6 +48,11 @@ case $action in
     repo)
             add_repo
     ;;
+    test)
+            prepare
+            build
+            build::deb
+    ;;
     *)
             prepare
             build

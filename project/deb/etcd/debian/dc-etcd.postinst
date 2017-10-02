@@ -9,6 +9,7 @@ case "$1" in
         else
             echo "LOCAL_IP=127.0.0.1" > /data/envs/etcd.sh
         fi
+        [ -L "/usr/bin/etcd" ] || ln -s /usr/local/bin/etcd /usr/bin/etcd
     ;;
     abort-*)
         exit 1
