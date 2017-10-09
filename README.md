@@ -17,3 +17,11 @@ Linux Deb/Rpm package [systemd]
 1. dc-ctl子项目之一
 2. 实践的时候发现python打包是一个问题,后面只支持python3.6+
 3. 本系列都不提供源码打包部分，如果探讨可以邮我
+
+## Todo list
+
+- ETCD
+- ETCD Proxy
+- Docker
+- K8s
+
